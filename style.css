@@ -15,6 +15,9 @@
   height: 100%;
   box-shadow: 10px 10px 10px rgb(112, 111, 111);
   transition: 3s, background-color 3s;
+  overflow: hidden;
+  /* border: 2px solid rgb(58, 57, 57);
+  border-radius: 5px; */
 }
 
 .card:hover {
@@ -40,9 +43,18 @@
 }
 
 .topicons:hover {
-  width: 62px;
-  height: 62px;
-  padding: 10px;
+  background-color: #f1ebeb40;
+  border-radius: 50%;
+  transform: scale(1.1);
+
+  transition: 0.3s;
+}
+
+.topicons:active {
+  background-color: rgb(206, 157, 230);
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .main {
@@ -55,6 +67,12 @@
   border-radius: 50%;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+.me:hover {
+  transform: scale(0.9);
+
+  transition: 0.3s;
 }
 
 h1,
@@ -95,6 +113,7 @@ h3 {
 }
 
 .button:hover {
+  background-color: rgb(61, 3, 61);
   transform: translate(7px, 7px);
   box-shadow: 5px 5px 2px rgb(143, 127, 127);
   color: white;
@@ -115,8 +134,17 @@ h3 {
 }
 
 .icons:hover {
-  width: 82px;
-  height: 82px;
+  background-color: #f1ebeb40;
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.icons:active {
+  background-color: rgb(206, 157, 230);
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 p {
