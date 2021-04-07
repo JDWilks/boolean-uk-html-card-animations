@@ -13,6 +13,17 @@
 .card {
   width: 500px;
   height: 100%;
+  box-shadow: 10px 10px 10px rgb(112, 111, 111);
+  transition: 3s, background-color 3s;
+}
+
+.card:hover {
+  box-shadow: 20px 20px 20px rgb(160, 158, 158);
+  background-color: rgb(235, 67, 16);
+}
+
+.card:active {
+  box-shadow: 20px 20px 20px rgb(206, 157, 230);
 }
 
 .header {
@@ -24,6 +35,13 @@
 .topicons {
   width: 60px;
   height: 60px;
+  padding: 10px;
+  transition: 1s;
+}
+
+.topicons:hover {
+  width: 62px;
+  height: 62px;
   padding: 10px;
 }
 
@@ -48,6 +66,11 @@ h3 {
 
 h1 {
   font-size: 3rem;
+  transition: 1s;
+}
+
+h1:hover {
+  color: white;
 }
 
 h2 {
@@ -68,6 +91,11 @@ h3 {
   font-size: 20px;
   border-radius: 20px;
   padding: 10px 20px 10px 20px;
+  transition: 1s;
+}
+
+.button:hover {
+  transform: translate(5px, 5px);
 }
 
 .social-icons {
@@ -81,6 +109,12 @@ h3 {
   height: 80px;
   padding: 10px;
   justify-content: center;
+  transition: 1s;
+}
+
+.icons:hover {
+  width: 82px;
+  height: 82px;
 }
 
 p {
