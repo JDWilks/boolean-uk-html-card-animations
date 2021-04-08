@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font: 1em sans-serif;
+  text-align: center;
 }
 .header,
 .main,
@@ -12,7 +13,7 @@
 
 .card {
   width: 500px;
-  height: 100%;
+  height: 1fr;
   box-shadow: 10px 10px 10px rgb(112, 111, 111);
   transition: 3s, background-color 3s;
   overflow: hidden;
@@ -36,8 +37,8 @@
 }
 
 .topicons {
-  width: 60px;
-  height: 60px;
+  width: 85px;
+  height: 85px;
   padding: 10px;
   transition: 1s;
 }
@@ -51,7 +52,7 @@
 }
 
 .topicons:active {
-  background-color: rgb(206, 157, 230);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   transform: scale(1.1);
   transition: 0.3s;
@@ -80,10 +81,12 @@ h2,
 h3 {
   text-align: center;
   line-height: 2;
+  transition: 1s;
 }
 
 h1 {
   font-size: 3rem;
+
   transition: 1s;
 }
 
@@ -93,34 +96,62 @@ h1:hover {
 
 h2 {
   font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+h2:hover {
+  color: white;
 }
 
 h3 {
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h3:hover {
+  color: white;
 }
 
 .button {
-  /* align-content: center; */
+  border: 2px solid white;
+  display: grid;
+  /* height: 80px;
+  width: 300px; */
   text-align: center;
-  /* display: inline; */
-  background-color: purple;
+  text-justify: center;
+  background: linear-gradient(
+      217deg,
+      rgba(223, 80, 192, 0.8),
+      rgba(77, 4, 40, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(86, 120, 231, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(44, 44, 94, 0.8), rgba(0, 0, 255, 0) 70.71%);
+
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
   border-radius: 20px;
   padding: 10px 20px 10px 20px;
   transition: 2s;
 }
 
 .button:hover {
-  background-color: rgb(61, 3, 61);
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(30, 75, 224, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+
   transform: translate(7px, 7px);
-  box-shadow: 5px 5px 2px rgb(143, 127, 127);
+  box-shadow: 5px 5px 2px rgb(255, 255, 255);
   color: white;
 }
 
 .social-icons {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 20px;
 }
@@ -141,7 +172,7 @@ h3 {
 }
 
 .icons:active {
-  background-color: rgb(206, 157, 230);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   transform: scale(1.1);
   transition: 0.3s;
@@ -150,5 +181,6 @@ h3 {
 p {
   line-height: 2;
   text-transform: uppercase;
+  font-weight: bold;
   justify-content: center;
 }
