@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font: 1em sans-serif;
-  text-align: center;
+  /* text-align: center; */
 }
 .header,
 .main,
@@ -12,8 +12,7 @@
 }
 
 .card {
-  width: 500px;
-  height: 1fr;
+  width: 400px;
   box-shadow: 10px 10px 10px rgb(112, 111, 111);
   transition: 3s, background-color 3s;
   overflow: hidden;
@@ -33,12 +32,14 @@
 .header {
   display: grid;
   grid-template-columns: 8fr 1fr 1fr;
-  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  /* justify-content: center; */
 }
 
 .topicons {
-  width: 85px;
-  height: 85px;
+  width: 55px;
+  height: 55px;
   padding: 10px;
   transition: 1s;
 }
@@ -60,18 +61,20 @@
 
 .main {
   display: grid;
-  justify-content: center;
-  padding-bottom: 50px;
+  justify-items: center;
+  padding-bottom: 20px;
 }
 
 .me {
   border-radius: 50%;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 10px; */
+  height: 200px;
 }
 
 .me:hover {
   transform: scale(0.9);
+  /* transform: rotate(10deg); */
 
   transition: 0.3s;
 }
@@ -96,7 +99,7 @@ h1:hover {
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 h2:hover {
@@ -105,7 +108,7 @@ h2:hover {
 
 h3 {
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 h3:hover {
@@ -151,14 +154,25 @@ h3:hover {
 
 .social-icons {
   display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* justify-items: center; */
+}
+
+.social-icon {
+  /* OPTION 1 - USEFUL WITH TEXT ELEMENTS & <img /> */
+
+  text-align: center;
+
+  /* OPTION 2 - USEFUL WITH CONTAINER ELEMENTS */
+
+  /* display: grid;
+  justify-items: center; */
 }
 
 .icons {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   padding: 10px;
   justify-content: center;
   transition: 1s;
